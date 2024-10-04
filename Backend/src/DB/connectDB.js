@@ -7,6 +7,7 @@ const connectDB = async () => {
       `${process.env.MONGO_DB_URI}/${DB_NAME}`
     );
     console.log("connectedRes");
+    console.log(process.env.PORT);
   } catch (error) {
     console.log("Error ..." + error);
     process.exit(1);
